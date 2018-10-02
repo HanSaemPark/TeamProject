@@ -58,33 +58,33 @@
 								<div class="form-group">
 									<label class="form-control-label">게시글 번호</label> <input
 										class="form-control form-control-lg" type="text"
-										value="${fboard.f_id}" name="bid" readonly>
+										value="${fboard.f_id}" name="f_id" readonly>
 								</div>
 								<div class="form-group">
 									<label class="form-control-label">닉네임</label> <input
 										class="form-control form-control-lg" type="text"
-										value="${fboard.m_userid}" name="bname" readonly>
+										value="${fboard.m_userid}" name="f_name" readonly>
 								</div>
 								<div class="form-group">
 									<label class="form-control-label">게시글 제목</label> <input
 										class="form-control form-control-lg" type="text"
-										value="${fboard.f_title}" name="btitle" required autofocus>
+										value="${fboard.f_title}" name="f_title" required autofocus>
 								</div>
 
 								<div class="form-group">
 									<label class="form-control-label"></label>
-									<textarea id="textAreaContent" name="bcontent" rows="10"
+									<textarea id="textAreaContent" name="f_content" rows="10"
 										cols="80" style="width: 100%">${fboard.f_content}</textarea>
 								</div>
 								<div class="form-group">
 									<label class="form-control-label"></label>작성일자<input
 										class="form-control form-control-lg" type="text"
-										value="${fboard.f_date}" name="bdate" readonly>
+										value="${fboard.f_date}" name="f_date" readonly>
 								</div>
 								<div class="form-group">
 									<label class="form-control-label"></label>조회수<input
 										class="form-control form-control-lg" type="text"
-										value="${fboard.f_hit}" name="bhit" readonly>
+										value="${fboard.f_hit}" name="f_hit" readonly>
 								</div>
 							</fieldset>
 						</table>
