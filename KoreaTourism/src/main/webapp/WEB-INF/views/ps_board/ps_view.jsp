@@ -10,14 +10,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Bootstrap file -->
-<link rel="stylesheet" href="resources/ps_design/css/bootstrap.css">
-<link rel="stylesheet" href="resources/ps_design/css/custom.css">
+<link rel="stylesheet" href="resources/boardDesign/ps_design/css/bootstrap.css">
+<link rel="stylesheet" href="resources/boardDesign/ps_design/css/custom.css">
 <link rel="shortcut icon" href="#">
 <!-- favicon 못찾는 오류나서.. 일단 넣어둠 태그 지우면 console에 오류뜸 -->
 <!-- Google jQuery file -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="resources/ps_design/js/bootstrap.js"></script>
+<script src="resources/boardDesign/ps_design/js/bootstrap.js"></script>
 <title>게시글 상세보기</title>
 </head>
 

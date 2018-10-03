@@ -10,19 +10,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Bootstrap file -->
-<link rel="stylesheet" href="resources/ps_design/css/bootstrap.css">
-<link rel="stylesheet" href="resources/ps_design/css/custom.css">
+<link rel="stylesheet" href="resources/boardDesign/ps_design/css/bootstrap.css">
+<link rel="stylesheet" href="resources/boardDesign/ps_design/css/custom.css">
 <link rel="shortcut icon" href="#">
 <!-- favicon 못찾는 오류나서.. 일단 넣어둠 태그 지우면 console에 오류뜸 -->
 <!-- Google jQuery file -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="resources/ps_design/js/bootstrap.js"></script>
+<script src="resources/boardDesign/ps_design/js/bootstrap.js"></script>
 
 <!-- smart editor -->
-<script type="text/javascript" src="<%=request.getContextPath()%>/resources
+<script type="text/javascript" src="resources/boardDesign
 /ps_design/editor/js/HuskyEZCreator.js" charset="utf-8"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/resources
+<script type="text/javascript" src="resources/boardDesign
 /ps_design/editor/photo_uploader/plugin/hp_SE2M_AttachQuickPhoto.js" charset="utf-8"></script>
 
 <title>게시글 상세보기</title>
@@ -120,7 +120,7 @@
 	  nhn.husky.EZCreator.createInIFrame({
 	      oAppRef: oEditors,
 	      elPlaceHolder: "textAreaContent",
-	      sSkinURI: "<%=request.getContextPath()%>/resources/ps_design/editor/SmartEditor2Skin.html",
+	      sSkinURI: "<%=request.getContextPath()%>/resources/boardDesign/ps_design/editor/SmartEditor2Skin.html",
 	      fCreator: "createSEditor2"
 	  });
 	   
@@ -141,13 +141,13 @@
 	   
 	  // textArea에 이미지 첨부
 	  function pasteHTML(filepath){
-	      var sHTML = '<img src="<%=request.getContextPath()%>/resources/ps_design/editor/upload/'+filepath+'">';
+	      var sHTML = '<img src="<%=request.getContextPath()%>/resources/boardDesign/ps_design/editor/upload/'+filepath+'">';
 	      oEditors.getById["textAreaContent"].exec("PASTE_HTML", [sHTML]);
 	  }
 	  
 	  // textArea에 영상 첨부
 	  function pasteHTML(filepath){
-	      var sHTML = '<iframe src="<%=request.getContextPath()%>/resources/ps_design/editor/stream/'+filepath+'">';
+	      var sHTML = '<iframe src="<%=request.getContextPath()%>/resources/boardDesign/ps_design/editor/stream/'+filepath+'">';
 	      oEditors.getById["textAreaContent"].exec("PASTE_HTML", [sHTML]);
 	  }
 	</script>
