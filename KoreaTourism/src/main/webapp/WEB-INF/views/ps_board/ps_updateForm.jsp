@@ -144,12 +144,7 @@
 	      var sHTML = '<img src="<%=request.getContextPath()%>/resources/boardDesign/ps_design/editor/upload/'+filepath+'">';
 	      oEditors.getById["textAreaContent"].exec("PASTE_HTML", [sHTML]);
 	  }
-	  
-	  // textArea에 영상 첨부
-	  function pasteHTML(filepath){
-	      var sHTML = '<iframe src="<%=request.getContextPath()%>/resources/boardDesign/ps_design/editor/stream/'+filepath+'">';
-	      oEditors.getById["textAreaContent"].exec("PASTE_HTML", [sHTML]);
-	  }
+	  	  
 	</script>
 
 </body>
